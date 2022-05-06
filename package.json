@@ -1,0 +1,31 @@
+{
+  "name": "nexxt-inca-web-hello-world-2",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "eslint-config-next": "12.1.6",
+    "autoprefixer": "^10.2.6",
+    "eslint": "8.6.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-es2015": "^1.1.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jasmine": "^4.1.2",
+    "jest": "^27.3.1",
+    "postcss": "^8.3.5",
+    "supertest": "^6.1.6",
+    "tailwindcss": "^3.0.16",
+    "typescript": "^4.5.2"
+  }
+}
