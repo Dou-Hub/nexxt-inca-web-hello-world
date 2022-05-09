@@ -19,17 +19,16 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "experimentalDecorators": true,
     "jsx": "preserve"
   },
   "exclude": [
     "node_modules",
-    "**/__tests__/*",
-    "**/to-delete/*",
-    "**/to-convert/*"
+    "**/__tests__/*"
   ],
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/index.js"    ]
+    ]
 }

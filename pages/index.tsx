@@ -1,10 +1,14 @@
-import Head from 'next/head';
-import Image from 'next/image';
+import React  from 'react';
+// import { SingleChoice } from '@nexxt/bot-client/src/questions/SingleChoice';
 
 const Home = () => {
-  return <div>
 
-    </div>
+  const q: any = { "type": "single_choice", "id": 26215, "value": "26215", "title": "Education", "texts": [{ "language": "en", "richTexts": [{ "blocks": [{ "key": "fnlv6", "text": "What is the highest level of education you have achieved?", "type": "unstyled", "depth": 0, "inlineStyleRanges": [], "entityRanges": [], "data": {} }], "entityMap": {} }] }], "questionTexts": [{ "language": "en", "richTexts": [{ "blocks": [{ "key": "fnlv6", "text": "What is the highest level of education you have achieved?", "type": "unstyled", "depth": 0, "inlineStyleRanges": [], "entityRanges": [], "data": {} }], "entityMap": {} }] }], "groupType": null, "showFollowUp": false, "allowUserEdit": false, "piping": false, "pipingQuestions": [], "selectedOptionType": "textOnly", "parent": 0, "children": [], "position": 0, "altTexts": [], "showImage": false, "showText": false, "mediaURL": null, "pictureURL": null, "playVideo": false, "videoURL": "", "width": 600, "height": 375, "continueTexts": [], "showContinueButton": false, "notApplicableTexts": [], "showNotApplicableOption": false, "triangleLayout": false, "imageDisplay": null, "hideText": false, "enableGPS": false, "enableRoute": false, "customMarkerIcon": false, "graphicMapEnabled": false, "selectedRegion": {}, "iconType": null, "iconNumber": null, "optionsLayout": 0, "min": 0, "max": 0, "inputFormat": null, "allowUserUpload": false, "redirectURL": "", "status": -1, "options": [{ "id": -1, "value": "8", "optionKey": "8", "label": "Junior High or Middle School", "texts": [{ "language": "en", "text": "Junior High or Middle School" }] }, { "id": -1, "value": "12", "optionKey": "12", "label": "High School Diploma, Secondary School/A-Levels Graduate", "texts": [{ "language": "en", "text": "High School Diploma, Secondary School/A-Levels Graduate" }] }, { "id": -1, "value": "13", "optionKey": "13", "label": "Some High School, Secondary School/A-Levels", "texts": [{ "language": "en", "text": "Some High School, Secondary School/A-Levels" }] }, { "id": -1, "value": "33", "optionKey": "33", "label": "Some College, University, Technical School or Further Education", "texts": [{ "language": "en", "text": "Some College, University, Technical School or Further Education" }] }, { "id": -1, "value": "34", "optionKey": "34", "label": "Undergraduate, University Degree", "texts": [{ "language": "en", "text": "Undergraduate, University Degree" }] }, { "id": -1, "value": "35", "optionKey": "35", "label": "Some Postgraduate", "texts": [{ "language": "en", "text": "Some Postgraduate" }] }, { "id": -1, "value": "36", "optionKey": "36", "label": "Graduate/Post Graduate Degree", "texts": [{ "language": "en", "text": "Graduate/Post Graduate Degree" }] }, { "id": -1, "value": "107", "optionKey": "107", "label": "Prefer not to answer", "texts": [{ "language": "en", "text": "Prefer not to answer" }] }], "gibberish": null, "lazyAnswer": null, "showGenericProbe": false, "genericProbeText": {}, "showTopics": null, "allowCopyPaste": null, "showValidation": false, "validationType": null, "pickNumber": 0, "showAlternateWording": null, "alternateWordingTexts": null, "buttons": [], "followUpTextsLike": [], "followUpTextsDislike": [], "followUpTextsConfused": [], "isAudience": true, "builtInID": "in.nexxt/qvalue/dynata/12377399", "isVisible": false, "popupSettings": {}, "customLogic": {}, "guidedFantasySettings": null };
+
+  return <div>
+    <h1>Hello I am good</h1>
+    {/* <SingleChoice question={q} handleAnswer={() => { }} langId="1" /> */}
+  </div>
 }
 
 export default Home
