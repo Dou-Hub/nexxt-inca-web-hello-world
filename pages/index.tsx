@@ -1,5 +1,8 @@
-import React  from 'react';
-// import { SingleChoice } from '@nexxt/bot-client/src/questions/SingleChoice';
+import React from 'react';
+// import { SingleChoice } from '@nexxt/bot-client/src/questions/SingleChoice.js';
+// import { SingleChoice } from './SingleChoice';
+
+import {SingleChoice} from '@nexxt/bot-client/?????';
 
 const Home = () => {
 
@@ -7,7 +10,7 @@ const Home = () => {
 
   return <div>
     <h1>Hello I am good</h1>
-    {/* <SingleChoice question={q} handleAnswer={() => { }} langId="1" /> */}
+    <SingleChoice question={q} handleAnswer={() => { }} langId="1" />
   </div>
 }
 
