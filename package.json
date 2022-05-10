@@ -3,16 +3,16 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 8080",
+    "preinstall": "(rm -f ~/.npmrc) && (echo 'registry=https://registry.npmjs.org\n@nexxt:registry=https://nexxt-624175887269.d.codeartifact.us-east-2.amazonaws.com/npm/nexxt-npm-registry/' > .npmrc.fixed) && (aws codeartifact login --tool npm --repository nexxt-npm-registry --domain nexxt) && (tail -2 ~/.npmrc >> .npmrc.fixed) && (mv .npmrc.fixed .npmrc) && (rm -f ~/.npmrc)",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@nexxt/bot-client": "1.4.4",
+    "@nexxt/common": "1.4.4",
     "i18next": "^21.8.0",
     "i18next-browser-languagedetector": "^6.1.4",
     "next": "12.1.6",
-    "nexxt-inca-common": "https://github.com/dou-hub/nexxt-inca-common.git",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-i18next": "^11.16.9"
@@ -24,6 +24,8 @@
     "@types/react-dom": "^17.0.11",
     "@types/react-draft-wysiwyg": "^1.13.4",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@nexxt/bot-client": "1.4.4",
+    "@nexxt/common": "1.4.4",
     "autoprefixer": "^10.2.6",
     "eslint": "8.6.0",
     "eslint-config-airbnb": "^18.2.1",
